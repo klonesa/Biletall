@@ -1,0 +1,69 @@
+﻿@model Biletall.Models.VM_PnrIndex
+
+@section Sheets
+{
+    <style>
+        .my-text {
+            font-size: 12px;
+            color: #a62827 !important;
+        }
+    </style>
+}
+<div class="input-group rounded">
+    <input id="pnrno" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+           aria-describedby="search-addon" />
+    <button type="button" onclick="Search()" class="input-group-text border-0">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Pnr No</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Nereden</th>
+            <th scope="col">Nereye</th>
+            <th scope="col">Tarih</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int id=0;
+            foreach (var item in Model.PnrModels)
+            {
+                id++;
+                <tr>
+                    <th scope="row">@id</th>
+                    <td>@item.PnrNo</td>
+                    <td>@item.FullName</td>
+                    <td>@item.Nereden</td>
+                    <td>@item.Nereye</td>
+                    <td>@item.Tarih</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="GeneralModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><b id="modalHeader"></b></h5>
+            </div>
+            <div id="modalBody" class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/Pnr/index.js"></script>
+}

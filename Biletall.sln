@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biletall.Entities", "Biletall.Entities\Biletall.Entities.csproj", "{EE4DF14F-C752-4F3E-881E-ABDBFB742B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biletall.Core", "Biletall.Core\Biletall.Core.csproj", "{82BCAF5E-3EDB-43DF-B636-810AFF5CF9BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biletall.Models", "Biletall.Models\Biletall.Models.csproj", "{034DF8B2-02BD-4D77-A71F-F987C0741579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biletall.DataAccess", "Biletall.DataAccess\Biletall.DataAccess.csproj", "{F2372764-6719-46B2-8AB7-608C1B09C3BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biletall.Business", "Biletall.Business\Biletall.Business.csproj", "{477AE74C-30DF-4264-BE42-D4B3064A1721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CB72258-3D1B-40EE-926E-B20694FC45C1}"
+	ProjectSection(SolutionItems) = preProject
+		MigrationReadMe.txt = MigrationReadMe.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biletall.Web", "Biletall.Web\Biletall.Web.csproj", "{73FFB043-23CA-4B22-8240-89E66522B58A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE4DF14F-C752-4F3E-881E-ABDBFB742B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4DF14F-C752-4F3E-881E-ABDBFB742B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4DF14F-C752-4F3E-881E-ABDBFB742B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4DF14F-C752-4F3E-881E-ABDBFB742B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BCAF5E-3EDB-43DF-B636-810AFF5CF9BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BCAF5E-3EDB-43DF-B636-810AFF5CF9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BCAF5E-3EDB-43DF-B636-810AFF5CF9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BCAF5E-3EDB-43DF-B636-810AFF5CF9BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{034DF8B2-02BD-4D77-A71F-F987C0741579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034DF8B2-02BD-4D77-A71F-F987C0741579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034DF8B2-02BD-4D77-A71F-F987C0741579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034DF8B2-02BD-4D77-A71F-F987C0741579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2372764-6719-46B2-8AB7-608C1B09C3BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2372764-6719-46B2-8AB7-608C1B09C3BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2372764-6719-46B2-8AB7-608C1B09C3BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2372764-6719-46B2-8AB7-608C1B09C3BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477AE74C-30DF-4264-BE42-D4B3064A1721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477AE74C-30DF-4264-BE42-D4B3064A1721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477AE74C-30DF-4264-BE42-D4B3064A1721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477AE74C-30DF-4264-BE42-D4B3064A1721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73FFB043-23CA-4B22-8240-89E66522B58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73FFB043-23CA-4B22-8240-89E66522B58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73FFB043-23CA-4B22-8240-89E66522B58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73FFB043-23CA-4B22-8240-89E66522B58A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9973F46D-372F-44E6-A9FF-B958B49152BD}
+	EndGlobalSection
+EndGlobal

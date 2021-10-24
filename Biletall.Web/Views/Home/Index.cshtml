@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Sheets
+{
+    <style>
+        .my_text {
+            font-size: 12px;
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label">Nereden</label>
+                    <select class="form-control" id="neredenDropdown"></select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label">Nereye</label>
+                    <select class="form-control" id="nereyeDropdown"></select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label">Gidiş Tarihi</label>
+                    <input class="form-control" id="datetimepicker" type="text">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="col-md-6">
+                <input onclick="SearchTicket()" type="button" value="Otobüs Bileti Ara" class="btn btn-danger" />
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="row" id="tableOtobus">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-3">
+                <a onclick="OrderByData(1,0,0,0)" class="btn btn-light">
+                    <span>Saate Göre Sırala</span>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a onclick="OrderByData(0,1,0,0)" class="btn btn-light">
+                    <span>Fiyata Göre Sırala</span>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a onclick="OrderByData(0,0,1,0)" class="btn btn-light" style=" float:right;">
+                    <i class="fas fa-couch"></i> <span>1+1</span>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a onclick="OrderByData(0,0,0,1)" class="btn btn-light" style=" float:right;">
+                    <i class="fas fa-couch"></i>
+                    <span>2+1</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="seferList">
+
+    </div>
+</div>
+
+<div class="modal fade" id="GeneralModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><b id="modalHeader"></b></h5>
+            </div>
+            <div id="modalBody" class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript" src="~/js/Home/index.js"></script>
+
+}
